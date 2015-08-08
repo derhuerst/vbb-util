@@ -1,0 +1,35 @@
+{
+	"name": "vbb-util",
+	"description": "JavaScript utilites for the VBB API client.",
+	"version": "0.1.0",
+	"main": "./src/index",
+	"keywords": [
+		"vbb",
+		"api",
+		"berlin",
+		"brandenburg",
+		"public transport",
+		"open data",
+		"fahrinfo",
+		"javascript"
+	],
+	"author": {
+		"name": "Jannis R",
+		"email": "mail@jannisr.de",
+		"url": "http://jannisr.de"
+	},
+	"homepage": "https://github.com/derhuerst/vbb-util",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/derhuerst/vbb-util.git"
+	},
+	"bugs": {
+		"url": "https://github.com/derhuerst/vbb-util/issues"
+	},
+	"license": "MIT",
+	"dependencies": {
+	},
+	"directories": {
+		"lib":		"./src"
+	}
+}
