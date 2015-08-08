@@ -10,11 +10,6 @@ var n = module.exports = {
 		type:	'groundLevel'
 	},
 
-	handicapAccessible: {
-		id:		'BF',
-		type:	'handicapAccessible'
-	},
-
 	tactilePaving: {
 		id:		'BL',
 		type:	'tactilePaving'
@@ -45,8 +40,8 @@ n.TT = n.touchAndTravel;
 
 n.parse = function (notes) {
 	var result = {}, i, property;
-	for (i in notes.Note) {
-		property = n[notes.Note[i].key];
+	for (i in notes.LocationNote) {
+		property = n[notes.LocationNote[i].key.toUpperCase()];
 		if (property) result[property.type] = true;
 	}
 	return result;

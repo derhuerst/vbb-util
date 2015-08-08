@@ -10,9 +10,9 @@ module.exports = {
 
 	stringifyToDate: function (when) {
 		return [
-			when.getFullYear()++,
-			('0' + when.getMonth()++).slice(-2),
-			('0' + when.getDate()++).slice(-2)
+			when.getFullYear(),
+			('0' + (1 + when.getMonth())).slice(-2),
+			('0' + when.getDate()).slice(-2)
 		].join('-');
 	},
 

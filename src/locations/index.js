@@ -5,10 +5,6 @@ module.exports = {
 
 
 
-	stringifyId: function (id) {
-		return id + '';
-	},
 
-	parseId: parseInt
 
 };
