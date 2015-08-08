@@ -92,13 +92,14 @@ p.categories = [
 
 
 
-p.createBitmask = function (types) {
+p.stringifyBitmask = function (types) {
 	var result = 0, type;
 	for (type in types) {
 		if (types[type] === true) result += p[type].bitmask;
 	}
 	return result;
 };
+
 p.parseBitmask = function (bitmask) {
 	var result = {}, i = 1;
 	do {

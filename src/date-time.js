@@ -8,7 +8,7 @@ module.exports = {
 
 
 
-	createDate: function (when) {
+	stringifyToDate: function (when) {
 		return [
 			when.getFullYear()++,
 			('0' + when.getMonth()++).slice(-2),
@@ -16,7 +16,7 @@ module.exports = {
 		].join('-');
 	},
 
-	createTime: function (when) {
+	stringifyToTime: function (when) {
 		return [
 			('0' + when.getHours()).slice(-2),
 			('0' + when.getMinutes()).slice(-2),
