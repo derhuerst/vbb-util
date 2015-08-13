@@ -4,8 +4,9 @@ module.exports = {
 
 
 
-	searchableName: function (name) {
-		return name
+	tokenize: function (name) {
+		var result = name
+		.toLowerCase()
 
 		// German umlauts
 		.replace(/ß/g, 'ss')
@@ -13,23 +14,28 @@ module.exports = {
 		.replace(/ö/g, 'oe')
 		.replace(/ü/g, 'ue')
 
-		// remove abbreviations
-		.replace(/^[SU](\+[SU])?\W/, ' ')
-
 		// expand abbreviations
-		.toLowerCase()
-		.replace(/\(pl\)/g, ' polen ')
-		.replace(/\(berlin\)/g, ' berlin ')
-		.replace(/\(bln\)/g, ' berlin ')
-		.replace(/str\.?$/, 'strasse')
-		.replace(/str\.?\W/g, 'strasse ')
-		.replace(/bhf\.?$/, 'bahnhof')
-		.replace(/bhf\.?\W/g, 'bahnhof ')
+		.replace(/\(pl\)/g, 'polen')
+		.replace(/\(berlin\)/g, 'berlin')
+		.replace(/\(bln\)/g, 'bln')
+
+		.replace(/^[SU](\+[SU])?\W/, ' ')   // remove `S+U` abbreviations
+		.split(/[\s\/\(\)]+/);
+
+		var i;
+		for (i = 0; i < result.length; i++) {
+			result[i] = result[i]
+			// expand abbreviations
+			.replace(/str\.?/, 'strasse')
+			.replace(/bhf\.?/, 'bahnhof')
+			.replace(/hbf\.?/, 'hauptbahnhof');
+		}
+
+		return result
+		.join(' ')
 
 		// special chars
-		.replace(/[^\w\s]/g, ' ')
-		.replace(/_/g, ' ')
-
+		.replace(/[^\w]|_/g, ' ')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 	},
