@@ -6,6 +6,8 @@ var p = module.exports = {
 		name:		'S-Bahn',
 		short:		'S',
 		type:		'suburban'
+		colors:
+			hex:	'#008C4F'
 	},
 
 	subway: {
@@ -14,6 +16,8 @@ var p = module.exports = {
 		name:		'U-Bahn',
 		short:		'U',
 		type:		'subway'
+		colors:
+			hex:	'#0067AC'
 	},
 
 	tram: {
@@ -22,6 +26,8 @@ var p = module.exports = {
 		name:		'Tram',
 		short:		'T',
 		type:		'tram'
+		colors:
+			hex:	'#E3001B'
 	},
 
 	bus: {
@@ -30,6 +36,8 @@ var p = module.exports = {
 		name:		'Bus',
 		short:		'B',
 		type:		'bus'
+		colors:
+			hex:	'#A5037B'
 	},
 
 	ferry: {
@@ -38,6 +46,8 @@ var p = module.exports = {
 		name:		'Fähre',
 		short:		'F',
 		type:		'ferry'
+		colors:
+			hex:	'#099BD6'
 	},
 
 	express: {
@@ -46,6 +56,8 @@ var p = module.exports = {
 		name:		'IC/ICE',
 		short:		'I',
 		type:		'express'
+		colors:
+			hex:	'#F4E613'
 	},
 
 	regional: {
@@ -54,6 +66,8 @@ var p = module.exports = {
 		name:		'RB/RE',
 		short:		'R',
 		type:		'regional'
+		colors:
+			hex:	'#FF0000'
 	},
 
 	unknown: {
@@ -62,6 +76,8 @@ var p = module.exports = {
 		name:		'unknown',
 		short:		'?',
 		type:		'unknown'
+		colors:
+			hex:	'#555555'
 	}
 
 };
