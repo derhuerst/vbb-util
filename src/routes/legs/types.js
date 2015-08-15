@@ -2,37 +2,44 @@ var t = module.exports = {
 
 	public: {
 		id:		'JNY',
-		type:	'public'
+		type:	'public',
+		symbol:	'\ud83d\ude86'
 	},
 
 	walk: {
 		id:		'WALK',
-		type:	'walk'
+		type:	'walk',
+		symbol:	'\ud83d\udeb6'
 	},
 
 	todo: {   // todo: what is this?
 		id:		'TRSF',
-		type:	'todo'
+		type:	'todo',
+		symbol:	'\u21b7'
 	},
 
 	bike: {
 		id:		'BIKE',
-		type:	'bike'
+		type:	'bike',
+		symbol:	'\ud83d\udeb2'
 	},
 
 	taxi: {
 		id:		'TAXI',
-		type:	'taxi'
+		type:	'taxi',
+		symbol:	'\ud83d\ude95'
 	},
 
 	car: {
 		id:		'CAR',
-		type:	'car'
+		type:	'car',
+		symbol:	'\ud83d\ude97'
 	},
 
 	unknown: {
 		id:		null,
-		type:	'unknown'
+		type:	'unknown',
+		symbol:	'?'
 	}
 
 };
