@@ -5,9 +5,8 @@ var p = module.exports = {
 		bitmask:	1,
 		name:		'S-Bahn',
 		short:		'S',
-		type:		'suburban'
-		colors:
-			hex:	'#008C4F'
+		type:		'suburban',
+		color:		'008C4F',
 	},
 
 	subway: {
@@ -15,9 +14,8 @@ var p = module.exports = {
 		bitmask:	2,
 		name:		'U-Bahn',
 		short:		'U',
-		type:		'subway'
-		colors:
-			hex:	'#0067AC'
+		type:		'subway',
+		color:		'0067AC',
 	},
 
 	tram: {
@@ -25,9 +23,8 @@ var p = module.exports = {
 		bitmask:	4,
 		name:		'Tram',
 		short:		'T',
-		type:		'tram'
-		colors:
-			hex:	'#E3001B'
+		type:		'tram',
+		color:		'E3001B',
 	},
 
 	bus: {
@@ -35,9 +32,8 @@ var p = module.exports = {
 		bitmask:	8,
 		name:		'Bus',
 		short:		'B',
-		type:		'bus'
-		colors:
-			hex:	'#A5037B'
+		type:		'bus',
+		color:		'A5037B',
 	},
 
 	ferry: {
@@ -45,9 +41,8 @@ var p = module.exports = {
 		bitmask:	16,
 		name:		'Fähre',
 		short:		'F',
-		type:		'ferry'
-		colors:
-			hex:	'#099BD6'
+		type:		'ferry',
+		color:		'099BD6',
 	},
 
 	express: {
@@ -55,9 +50,8 @@ var p = module.exports = {
 		bitmask:	32,
 		name:		'IC/ICE',
 		short:		'I',
-		type:		'express'
-		colors:
-			hex:	'#F4E613'
+		type:		'express',
+		color:		'F4E613',
 	},
 
 	regional: {
@@ -65,9 +59,8 @@ var p = module.exports = {
 		bitmask:	64,
 		name:		'RB/RE',
 		short:		'R',
-		type:		'regional'
-		colors:
-			hex:	'#FF0000'
+		type:		'regional',
+		color:		'FF0000',
 	},
 
 	unknown: {
@@ -75,9 +68,8 @@ var p = module.exports = {
 		bitmask:	0,
 		name:		'unknown',
 		short:		'?',
-		type:		'unknown'
-		colors:
-			hex:	'#555555'
+		type:		'unknown',
+		color:		'555555',
 	}
 
 };
