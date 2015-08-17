@@ -7,7 +7,8 @@ var p = module.exports = {
 		short:		'S',
 		type:		'suburban',
 		color:		'008C4F',
-		symbol:		'\ud83d\ude88'
+		symbol:		'\ud83d\ude88',
+		cliSymbol:	'\u25cf'
 	},
 
 	subway: {
@@ -17,7 +18,8 @@ var p = module.exports = {
 		short:		'U',
 		type:		'subway',
 		color:		'0067AC',
-		symbol:		'\ud83d\ude87'
+		symbol:		'\ud83d\ude87',
+		cliSymbol:	'\u25a0'
 	},
 
 	tram: {
@@ -27,7 +29,8 @@ var p = module.exports = {
 		short:		'T',
 		type:		'tram',
 		color:		'E3001B',
-		symbol:		'\ud83d\ude8b'
+		symbol:		'\ud83d\ude8b',
+		cliSymbol:	'\u25a0'
 	},
 
 	bus: {
@@ -37,7 +40,8 @@ var p = module.exports = {
 		short:		'B',
 		type:		'bus',
 		color:		'A5037B',
-		symbol:		'\ud83d\ude8c'
+		symbol:		'\ud83d\ude8c',
+		cliSymbol:	'\u25cf'
 	},
 
 	ferry: {
@@ -47,7 +51,8 @@ var p = module.exports = {
 		short:		'F',
 		type:		'ferry',
 		color:		'099BD6',
-		symbol:		'\ud83d\udea2'
+		symbol:		'\ud83d\udea2',
+		cliSymbol:	'\u25cf'
 	},
 
 	express: {
@@ -57,7 +62,8 @@ var p = module.exports = {
 		short:		'I',
 		type:		'express',
 		color:		'F4E613',
-		symbol:		'\ud83d\ude84'
+		symbol:		'\ud83d\ude84',
+		cliSymbol:	'\u25cf'
 	},
 
 	regional: {
@@ -67,7 +73,8 @@ var p = module.exports = {
 		short:		'R',
 		type:		'regional',
 		color:		'FF0000',
-		symbol:		'\ud83d\ude86'
+		symbol:		'\ud83d\ude86',
+		cliSymbol:	'\u25c6'
 	},
 
 	unknown: {
@@ -77,7 +84,8 @@ var p = module.exports = {
 		short:		'?',
 		type:		'unknown',
 		color:		'555555',
-		symbol:		'?'
+		symbol:		'?',
+		cliSymbol:	'?'
 	}
 
 };
