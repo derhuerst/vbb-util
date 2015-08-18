@@ -7,8 +7,8 @@ var p = module.exports = {
 		short:		'S',
 		type:		'suburban',
 		color:		'008C4F',
-		cliSymbol:	'\u25cf'
 		unicode:	'\ud83d\ude88',
+		ansi:		['green']   // `chalk` color code
 	},
 
 	subway: {
@@ -18,8 +18,8 @@ var p = module.exports = {
 		short:		'U',
 		type:		'subway',
 		color:		'0067AC',
-		cliSymbol:	'\u25a0'
 		unicode:	'\ud83d\ude87',
+		ansi:		['blue']   // `chalk` color code
 	},
 
 	tram: {
@@ -29,8 +29,8 @@ var p = module.exports = {
 		short:		'T',
 		type:		'tram',
 		color:		'E3001B',
-		cliSymbol:	'\u25a0'
 		unicode:	'\ud83d\ude8b',
+		ansi:		['red']   // `chalk` color code
 	},
 
 	bus: {
@@ -40,8 +40,8 @@ var p = module.exports = {
 		short:		'B',
 		type:		'bus',
 		color:		'A5037B',
-		cliSymbol:	'\u25cf'
 		unicode:	'\ud83d\ude8c',
+		ansi:		['dim', 'magenta']   // `chalk` color codes
 	},
 
 	ferry: {
@@ -51,19 +51,19 @@ var p = module.exports = {
 		short:		'F',
 		type:		'ferry',
 		color:		'099BD6',
-		cliSymbol:	'\u25cf'
 		unicode:	'\ud83d\udea2',
+		ansi:		['cyan']   // `chalk` color code
 	},
 
 	express: {
 		category:	5,
 		bitmask:	32,
 		name:		'IC/ICE',
-		short:		'I',
+		short:		'E',
 		type:		'express',
 		color:		'F4E613',
-		cliSymbol:	'\u25cf'
 		unicode:	'\ud83d\ude84',
+		ansi:		['yellow']   // `chalk` color code
 	},
 
 	regional: {
@@ -73,8 +73,8 @@ var p = module.exports = {
 		short:		'R',
 		type:		'regional',
 		color:		'FF0000',
-		cliSymbol:	'\u25c6'
 		unicode:	'\ud83d\ude86',
+		ansi:		['red']   // `chalk` color code
 	},
 
 	unknown: {
@@ -84,8 +84,8 @@ var p = module.exports = {
 		short:		'?',
 		type:		'unknown',
 		color:		'555555',
-		cliSymbol:	'?'
 		unicode:	'?',
+		ansi:		['gray']   // `chalk` color code
 	}
 
 };
