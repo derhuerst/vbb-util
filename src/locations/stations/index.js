@@ -17,27 +17,31 @@ module.exports = {
 		// expand abbreviations
 		.replace(/\(pl\)/g, 'polen')
 		.replace(/\(berlin\)/g, 'berlin')
-		.replace(/\(bln\)/g, 'bln')
+		.replace(/\(bln\)/g, 'berlin')
+		.replace(/^s\s/, 'sbahn ')
+		.replace(/^u\s/, 'ubahn ')
+		.replace(/^s\+u\s/, 'sbahn ubahn ')
+		.replace(/str\./, 'strasse')
+		.replace(/bhf\./, 'bahnhof')
+		.replace(/hbf\./, 'hauptbahnhof')
 
-		.replace(/^[SU](\+[SU])?\W/, ' ')   // remove `S+U` abbreviations
-		.split(/[\s\/\(\)]+/);
+		.split(/[\s\/\(\)\-,\.]+/);
 
-		var i;
-		for (i = 0; i < result.length; i++) {
-			result[i] = result[i]
+		for (var i = 0; i < result.length; i++) {
+			if (result[i].length === 0){
+				result.splice(i--, 1);
+				continue;
+			}
+			result[i] = result[i].trim()
+
 			// expand abbreviations
-			.replace(/str\.?/, 'strasse')
-			.replace(/bhf\.?/, 'bahnhof')
-			.replace(/hbf\.?/, 'hauptbahnhof');
+			.replace(/str\.?$/, 'strasse')
+			.replace(/bhf\.?$/, 'bahnhof')
+			.replace(/hbf\.?$/, 'hauptbahnhof');
 		}
 
-		return result
-		.join(' ')
-
-		// special chars
-		.replace(/[^\w]|_/g, ' ')
-		.replace(/\s{2,}/g, ' ')
-		.trim();
+		return result.join(' ')
+		.replace(/[^\w\s]|_/g, '');   // special chars
 	},
 
 
