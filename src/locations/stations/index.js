@@ -46,10 +46,32 @@ module.exports = {
 
 
 
+	stopwords: [
+		'bahnhof',
+		'strasse',
+		'sbahn',
+		'ubahn',
+		'berlin',
+		'polen',
+		'hauptbahnhof'
+	],
+
+
+
 	stringifyId: function (id) {
 		return id + '';
 	},
 
 	parseId: parseInt
 
+};
+
+
+
+exports.stopwords.filter = function (word) {
+	return 0 > stopwords.indexOf(word);
+};
+
+exports.filterStopwords = function (words) {
+	return words.filter(exports.stopwords.filter);
 };
