@@ -68,10 +68,10 @@ module.exports = {
 
 
 
-exports.stopwords.filter = function (word) {
-	return 0 > stopwords.indexOf(word);
+module.exports.stopwords.filter = function (word) {
+	return 0 > module.exports.stopwords.indexOf(word);
 };
 
-exports.filterStopwords = function (words) {
-	return words.filter(exports.stopwords.filter);
+module.exports.filterStopwords = function (words) {
+	return words.filter(module.exports.stopwords.filter);
 };
