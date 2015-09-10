@@ -6,7 +6,7 @@ var p = module.exports = {
 		name:		'S-Bahn',
 		short:		'S',
 		type:		'suburban',
-		color:		'008C4F',
+		color:		'#008c4f',
 		unicode:	'\ud83d\ude88',
 		ansi:		['green']   // `chalk` color code
 	},
@@ -17,7 +17,7 @@ var p = module.exports = {
 		name:		'U-Bahn',
 		short:		'U',
 		type:		'subway',
-		color:		'0067AC',
+		color:		'#0067ac',
 		unicode:	'\ud83d\ude87',
 		ansi:		['blue']   // `chalk` color code
 	},
@@ -28,7 +28,7 @@ var p = module.exports = {
 		name:		'Tram',
 		short:		'T',
 		type:		'tram',
-		color:		'E3001B',
+		color:		'#e3001b',
 		unicode:	'\ud83d\ude8b',
 		ansi:		['red']   // `chalk` color code
 	},
@@ -39,7 +39,7 @@ var p = module.exports = {
 		name:		'Bus',
 		short:		'B',
 		type:		'bus',
-		color:		'A5037B',
+		color:		'#a5037b',
 		unicode:	'\ud83d\ude8c',
 		ansi:		['dim', 'magenta']   // `chalk` color codes
 	},
@@ -50,7 +50,7 @@ var p = module.exports = {
 		name:		'Fähre',
 		short:		'F',
 		type:		'ferry',
-		color:		'099BD6',
+		color:		'#099bd6',
 		unicode:	'\ud83d\udea2',
 		ansi:		['cyan']   // `chalk` color code
 	},
@@ -61,7 +61,7 @@ var p = module.exports = {
 		name:		'IC/ICE',
 		short:		'E',
 		type:		'express',
-		color:		'F4E613',
+		color:		'#f4e613',
 		unicode:	'\ud83d\ude84',
 		ansi:		['yellow']   // `chalk` color code
 	},
@@ -72,7 +72,7 @@ var p = module.exports = {
 		name:		'RB/RE',
 		short:		'R',
 		type:		'regional',
-		color:		'FF0000',
+		color:		'#ff0000',
 		unicode:	'\ud83d\ude86',
 		ansi:		['red']   // `chalk` color code
 	},
@@ -83,7 +83,7 @@ var p = module.exports = {
 		name:		'unknown',
 		short:		'?',
 		type:		'unknown',
-		color:		'555555',
+		color:		'#555555',
 		unicode:	'?',
 		ansi:		['gray']   // `chalk` color code
 	}
