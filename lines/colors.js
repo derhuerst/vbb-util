@@ -55,6 +55,6 @@ module.exports = {
 		'68':	{ fg: '#fff', bg: '#5fbb46' }
 	},
 
-	unknown:	'#777'
+	unknown:	{ fg: '#fff', bg: '#555' }
 
 };
