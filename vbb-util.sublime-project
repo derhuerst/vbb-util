@@ -8,15 +8,10 @@
 			],
 			"folder_exclude_patterns":
 			[
-				"src",
 				"node_modules"
 			],
 			"name": "vbb-util",
 			"path": "."
-		},
-		{
-			"name": "src",
-			"path": "src"
 		}
 	],
 	"settings":
