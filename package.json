@@ -28,7 +28,7 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"parse-iso-duration":	"^0.1.1"
+		"parse-iso-duration":	"^1.0.0"
 	},
 	"directories": {
 		"lib":		"./src"
