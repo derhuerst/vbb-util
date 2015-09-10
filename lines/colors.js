@@ -53,6 +53,8 @@ module.exports = {
 		'63':	{ fg: '#fff', bg: '#f47922' },
 		'67':	{ fg: '#fff', bg: '#3c733c' },
 		'68':	{ fg: '#fff', bg: '#5fbb46' }
-	}
+	},
+
+	unknown:	'#777'
 
 };
