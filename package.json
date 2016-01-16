@@ -26,7 +26,7 @@
 	"bugs": {
 		"url": "https://github.com/derhuerst/vbb-util/issues"
 	},
-	"license": "MIT",
+	"license": "ISC",
 	"dependencies": {
 		"parse-iso-duration":	"^1.0.0"
 	},
