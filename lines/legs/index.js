@@ -1,6 +1,8 @@
-module.exports = {
+'use strict'
 
-	types:		require('./types'),
-	notes:		require('./notes')
+const legs = {
+	  types: require('./types')
+	, notes: require('./notes')
+}
 
-};
+module.exports = lines

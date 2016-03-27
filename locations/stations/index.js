@@ -1,11 +1,17 @@
-module.exports = {
+'use strict'
 
-	notes:		require('./notes'),
+const stopwords = [
+	  'bahnhof', 'strasse', 'hauptbahnhof'
+	, 'ubahn', 'sbahn'
+	, 'berlin', 'polen'
+]
 
+const stations = {
 
+	  notes: require('./notes')
 
-	tokenize: function (name) {
-		var result = name
+	, tokenize: (name) => {
+		let result = name
 		.toLowerCase()
 
 		// German umlauts
@@ -42,36 +48,19 @@ module.exports = {
 
 		return result.join(' ')
 		.replace(/[^\w\s]|_/g, '');   // special chars
-	},
+	}
+
+	, stopwords
+	, filterStopwords: (words) => words.filter((word) => stopwords.indexOf(word) >= 0)
 
 
 
-	stopwords: [
-		'bahnhof',
-		'strasse',
-		'sbahn',
-		'ubahn',
-		'berlin',
-		'polen',
-		'hauptbahnhof'
-	],
+	, stringifyId: (id) => id + ''
+
+	, parseId: parseInt
+
+}
 
 
 
-	stringifyId: function (id) {
-		return id + '';
-	},
-
-	parseId: parseInt
-
-};
-
-
-
-module.exports.stopwords.filter = function (word) {
-	return 0 > module.exports.stopwords.indexOf(word);
-};
-
-module.exports.filterStopwords = function (words) {
-	return words.filter(module.exports.stopwords.filter);
-};
+module.exports = stations

@@ -1,31 +1,21 @@
+'use strict'
+
 // todo: see derhuerst/vbb#9
 
-var n = module.exports = {
+const n = {
+	  handicapAccessible: { id: 'BF', type: 'handicapAccessible' }
+	, bycicleConveyance:  { id: 'FB', type: 'bycicleConveyance' }
+}
+n.BF = n.handicapAccessible
+n.FB = n.bycicleConveyance
 
-	handicapAccessible: {
-		id:		'BF',
-		type:	'handicapAccessible'
-	},
-
-	bycicleConveyance: {
-		id:		'FB',
-		type:	'bycicleConveyance'
-	},
-
-};
-
-
-
-n.BF = n.handicapAccessible;
-n.FB = n.bycicleConveyance;
-
-
-
-n.parse = function (notes) {
-	var result = {}, i, property;
-	for (i in notes.Note) {
-		property = n[notes.Note[i].key.toUpperCase()];
-		if (property) result[property.type] = true;
+n.parse = (notes) => {
+	let result = {}
+	for (let i in notes.Note) {
+		let id = notes.Note[i].key.toUpperCase()
+		if (id in n) result[n[id].type] = true
 	}
-	return result;
-};
+	return result
+}
+
+module.exports = n

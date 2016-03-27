@@ -1,48 +1,52 @@
-var n = module.exports = {
+'use strict'
 
-	lift: {
-		id:		'AT',
-		type:	'lift'
-	},
+const n = {
 
-	groundLevel: {
-		id:		'E5',
-		type:	'groundLevel'
-	},
-
-	tactilePaving: {
-		id:		'BL',
-		type:	'tactilePaving'
-	},
-
-	escalator: {
-		id:		'FT',
-		type:	'escalator'
-	},
-
-	touchAndTravel: {
-		id:		'TT',
-		type:	'touchAndTravel'
+	  lift: {
+		  id:   'AT'
+		, type: 'lift'
 	}
 
-};
-
-
-
-n.AT = n.lift;
-n.E5 = n.groundLevel;
-n.BF = n.handicapAccessible;
-n.BL = n.tactilePaving;
-n.FT = n.escalator;
-n.TT = n.touchAndTravel;
-
-
-
-n.parse = function (notes) {
-	var result = {}, i, property;
-	for (i in notes.LocationNote) {
-		property = n[notes.LocationNote[i].key.toUpperCase()];
-		if (property) result[property.type] = true;
+	, groundLevel: {
+		  id:   'E5'
+		, type: 'groundLevel'
 	}
-	return result;
-};
+
+	, tactilePaving: {
+		  id:   'BL'
+		, type: 'tactilePaving'
+	}
+
+	, escalator: {
+		  id:   'FT'
+		, type: 'escalator'
+	}
+
+	, touchAndTravel: {
+		  id:   'TT'
+		, type: 'touchAndTravel'
+	}
+
+}
+
+n.AT = n.lift
+n.E5 = n.groundLevel
+n.BF = n.handicapAccessible
+n.BL = n.tactilePaving
+n.FT = n.escalator
+n.TT = n.touchAndTravel
+
+
+
+n.parse = (notes) => {
+	var r = {}
+	for (let i in notes.LocationNote) {
+		let type = notes.LocationNote[i].key.toUpperCase()
+		if (type in n) r[n[type].type] = true
+	}
+	return r
+}
+
+
+
+module.exports = n

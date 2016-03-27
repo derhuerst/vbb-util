@@ -1,36 +1,38 @@
-var products = require('../products');
+'use strict'
+
+const products = require('../products')
+const stations = require('./stations/index')
+const types    = require('./types')
 
 
 
-module.exports = {
+const locations = {
 
-	stations:	require('./stations/index'),
-	types:		require('./types'),
+	stations, types
 
-
-
-	parse: function (location) {
-		var result = {
-			name:		location.name,
-			latitude:	location.lat,
-			longitude:	location.lon
-		};
-
-		if (this.types[location.type])
-			result.type = this.types[location.type.toUpperCase()];
-		if (!result.type || result.type.type === 'station') {
-			if (location.extId) {   // `loc` is a station
-				result.id =			this.stations.parseId(location.extId);
-				result.type = 		this.types.station;
-				// todo: only parse bitmask if given
-				result.products =	products.parseBitmask(location.products);
-				if (location.LocationNotes)
-					result.notes = this.stations.notes.parse(location.LocationNotes);
-			} else result.type = this.types.unknown;
+	, parse: (loc) => {
+		let r = {
+			  name:      loc.name
+			, latitude:  loc.lat
+			, longitude: loc.lon
 		}
 
-		result.type = result.type.type;
-		return result;
-	}
+		loc.type = loc.type.toUpperCase()
+		if (loc.type in types) r.type = types[loc.type].type
 
-};
+		if (r.type === 'station') {
+			if (loc.extId) {
+				r.id =       stations.parseId(loc.extId)
+				r.type =     types.station.type
+				if (loc.products)
+					r.products = products.parseBitmask(loc.products)
+				if (loc.LocationNotes)
+					r.notes = stations.notes.parse(loc.LocationNotes)
+			} else r.type = types.unknown.type
+		}
+
+		return r
+	}
+}
+
+module.exports = locations
