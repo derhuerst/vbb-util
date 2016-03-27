@@ -1,4 +1,4 @@
-# vbb-util
+# vbb-util 🛠
 
 *vbb-util* is a colleciton of **JavaScript utilities for the [VBB API client](https://github.com/derhuerst/vbb)**.
 

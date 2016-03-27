@@ -1,7 +1,9 @@
-module.exports = {
+'use strict'
 
-	fares:		require('./fares'),
-	legs:		require('./legs/index'),
-	colors:		require('./colors')
+const lines = {
+	  fares:  require('./fares')
+	, legs:   require('./legs/index')
+	, colors: require('./colors')
+}
 
-};
+module.exports = lines

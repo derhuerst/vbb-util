@@ -22,6 +22,7 @@ module.exports = {
 			if (location.extId) {   // `loc` is a station
 				result.id =			this.stations.parseId(location.extId);
 				result.type = 		this.types.station;
+				// todo: only parse bitmask if given
 				result.products =	products.parseBitmask(location.products);
 				if (location.LocationNotes)
 					result.notes = this.stations.notes.parse(location.LocationNotes);

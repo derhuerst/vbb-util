@@ -1,15 +1,13 @@
-var parse =			require('parse-iso-duration');
+'use strict'
+
+const parse = require('parse-iso-duration')
 
 
 
-module.exports = {
+const duration = {
 
+	parse: (duration) => parse(duration.replace(/^[R]T/, 'PT'))
 
+}
 
-	parse: function (duration) {
-		return parse(duration.replace(/^[R]T/, 'PT'));
-	}
-
-
-
-};
+module.exports = duration
