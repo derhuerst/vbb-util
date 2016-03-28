@@ -28,7 +28,8 @@
 	},
 	"license": "ISC",
 	"dependencies": {
-		"parse-iso-duration":	"^1.0.0"
+		"parse-iso-duration":   "^1",
+		"vbb-tokenize-station": "^0.1.1"
 	},
 	"directories": {
 		"lib":		"./src"
