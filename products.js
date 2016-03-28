@@ -120,7 +120,7 @@ p.parseCategory = (category) => p.categories[parseInt(category)] || p.unknown
 
 p.stringifyBitmask = (types) => {
 	let bitmask = 0
-	for (let stype in types) {
+	for (let type in types) {
 		if (types[type] === true) bitmask += p[type].bitmask
 	}
 	return bitmask

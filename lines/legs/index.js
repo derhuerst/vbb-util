@@ -5,4 +5,4 @@ const legs = {
 	, notes: require('./notes')
 }
 
-module.exports = lines
+module.exports = legs
