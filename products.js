@@ -104,6 +104,15 @@ p.bitmasks[32] = p.express
 p.bitmasks[64] = p.regional
 
 
+p.aliases = []
+p.aliases.ubahn = p.aliases.u   = p.subway
+p.aliases.sbahn = p.aliases.u   = p.suburban
+p.aliases.t = p.tram
+p.aliases.b = p.bus
+p.aliases.fähre = p.aliases.f   = p.ferry
+p.aliases.ice   = p.aliases.ice = p.express
+p.aliases.regionalexpress = p.aliases.re = p.regional
+p.aliases.regionalbahn    = p.aliases.rb = p.regional
 
 p.categories = [
 	p.suburban,
