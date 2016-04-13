@@ -59,6 +59,8 @@ const colors = {
 
 	, unknown:  { fg: '#fff', bg: '#555555' }
 
+	, metro:    { fg: '#fff', bg: '#f3791d' }
+
 }
 
 module.exports = colors
