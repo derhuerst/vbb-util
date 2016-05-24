@@ -1,8 +1,7 @@
 'use strict'
 
 const lines = {
-	  fares:  require('./fares')
-	, legs:   require('./legs/index')
+	  legs:   require('./legs/index')
 	, colors: require('./colors')
 }
 
