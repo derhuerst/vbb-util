@@ -34,10 +34,14 @@ t.P = t.POI = t.poi
 
 
 
-t.stringify = (types) => Object.keys(types)
-	.filter((type) => type in t)
-	.filter((type) => t[type].alt)
-	.join('')
+const all = ['station', 'address', 'poi']
+t.stringify = (types) => {
+	if (all.every((t) => types[t])) return 'ALL'
+	return all.reduce((r, x) => {
+		if (types[x]) r += t[x].alt
+		return r
+	}, '')
+}
 
 t.parse = (types) => types.split('')
 	.filter((alt) => alt in t)
