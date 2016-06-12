@@ -15,6 +15,7 @@ const colors = {
 		, S42:  { fg: '#fff', bg: '#c26a36' }
 		, S45:  { fg: '#fff', bg: '#c38737' }
 		, S46:  { fg: '#fff', bg: '#c38737' }
+		, S47:  { fg: '#fff', bg: '#c38737' }
 		, S75:  { fg: '#fff', bg: '#6f4e9c' }
 		, S85:  { fg: '#fff', bg: '#55a822' }
 	}
