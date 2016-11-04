@@ -1,7 +1,7 @@
 {
 	"name": "vbb-util",
 	"description": "JavaScript utilites for the VBB API client.",
-	"version": "0.10.0",
+	"version": "0.10.1",
 	"main": "./src/index",
 	"keywords": [
 		"vbb",
@@ -29,7 +29,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"parse-iso-duration":   "^1",
-		"vbb-tokenize-station": "^0.1.1"
+		"vbb-tokenize-station": "^0.2"
 	},
 	"directories": {
 		"lib":		"./src"
