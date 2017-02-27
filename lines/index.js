@@ -2,7 +2,7 @@
 
 const lines = {
 	  legs:   require('./legs/index')
-	, colors: require('./colors')
+	, colors: require('./colors.json')
 }
 
 module.exports = lines
