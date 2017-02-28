@@ -55,6 +55,56 @@
 		, "68":   { "fg": "#fff", "bg": "#5fbb46" }
 	}
 
+	, "regional": {
+		  "RE1":  { "fg": "#fff", "bg": "#FF0000" }
+		, "RE2":  { "fg": "#fff", "bg": "#FFE600" }
+		, "RE3":  { "fg": "#fff", "bg": "#FF5900" }
+		, "RE4":  { "fg": "#fff", "bg": "#80004D" }
+		, "RE5":  { "fg": "#fff", "bg": "#0080FF" }
+		, "RE6":  { "fg": "#fff", "bg": "#E64DFF" }
+		, "RE7":  { "fg": "#fff", "bg": "#269900" }
+		, "RE10": { "fg": "#fff", "bg": "#994D19" }
+		, "RE15": { "fg": "#fff", "bg": "#FFE600" }
+		, "RE18": { "fg": "#fff", "bg": "#FF5900" }
+		, "RB10": { "fg": "#fff", "bg": "#59FF00" }
+		, "RB11": { "fg": "#fff", "bg": "#33CCFF" }
+		, "RB12": { "fg": "#fff", "bg": "#9900FF" }
+		, "RB13": { "fg": "#fff", "bg": "#FF7300" }
+		, "RB14": { "fg": "#fff", "bg": "#9900FF" }
+		, "RB19": { "fg": "#fff", "bg": "#730050" }
+		, "RB20": { "fg": "#fff", "bg": "#269900" }
+		, "RB21": { "fg": "#fff", "bg": "#4D66FF" }
+		, "RB22": { "fg": "#fff", "bg": "#33CCFF" }
+		, "RB23": { "fg": "#fff", "bg": "#9900FF" }
+		, "RB24": { "fg": "#fff", "bg": "#4D66FF" }
+		, "RB25": { "fg": "#fff", "bg": "#19A6FF" }
+		, "RB26": { "fg": "#fff", "bg": "#00FF73" }
+		, "RB27": { "fg": "#fff", "bg": "#FF0000" }
+		, "RB31": { "fg": "#fff", "bg": "#59FF00" }
+		, "RB32": { "fg": "#fff", "bg": "#FF0000" }
+		, "RB33": { "fg": "#fff", "bg": "#FF0000" }
+		, "RB35": { "fg": "#fff", "bg": "#4D66FF" }
+		, "RB36": { "fg": "#fff", "bg": "#994D19" }
+		, "RB43": { "fg": "#fff", "bg": "#4D66FF" }
+		, "RB45": { "fg": "#fff", "bg": "#FFE600" }
+		, "RB46": { "fg": "#fff", "bg": "#E64DFF" }
+		, "RB49": { "fg": "#fff", "bg": "#80004D" }
+		, "RB51": { "fg": "#fff", "bg": "#00FF73" }
+		, "RB54": { "fg": "#fff", "bg": "#4D66FF" }
+		, "RB55": { "fg": "#fff", "bg": "#FF5900" }
+		, "RB60": { "fg": "#fff", "bg": "#59FF00" }
+		, "RB61": { "fg": "#fff", "bg": "#80004D" }
+		, "RB62": { "fg": "#fff", "bg": "#E64DFF" }
+		, "RB63": { "fg": "#fff", "bg": "#FFE600" }
+		, "OE65": { "fg": "#fff", "bg": "#0080FF" }
+		, "RB66": { "fg": "#fff", "bg": "#269900" }
+		, "RB70": { "fg": "#fff", "bg": "#80004D" }
+		, "RB73": { "fg": "#fff", "bg": "#00FF73" }
+		, "RB74": { "fg": "#fff", "bg": "#0080FF" }
+		, "RB91": { "fg": "#fff", "bg": "#994D19" }
+		, "RB93": { "fg": "#fff", "bg": "#994D19" }
+	}
+
 	, "unknown":  { "fg": "#fff", "bg": "#555555" }
 
 	, "metro":    { "fg": "#fff", "bg": "#f3791d" }
