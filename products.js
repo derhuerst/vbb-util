@@ -41,7 +41,7 @@ const p = {
 		, name:     'Bus'
 		, short:    'B'
 		, type:     'bus'
-		, color:    '#a5037b'
+		, color:    '#922A7D'
 		, unicode:  '🚌'
 		, ansi:     ['dim', 'magenta'] // `chalk` color codes
 	}
@@ -74,7 +74,7 @@ const p = {
 		, name:     'RB/RE'
 		, short:    'R'
 		, type:     'regional'
-		, color:    '#ff0000'
+		, color:    '#D9222A'
 		, unicode:  '🚆'
 		, ansi:     ['red'] // `chalk` color code
 	}
