@@ -1,16 +1,15 @@
 # vbb-util 🛠
 
-*vbb-util* is a colleciton of **JavaScript utilities for VBB public transport stuff**, used in these projects:
+**Deprecated.** Use [`vbb-line-colors`](https://npmjs.com/package/vbb-line-colors), [`vbb-mode-weights`](https://npmjs.com/package/vbb-mode-weights), [`vbb-parse-line`](https://npmjs.com/package/vbb-parse-line) or [`vbb-short-station-name`](https://npmjs.com/package/vbb-short-station-name) instead. Have a look at [the list of VBB JavaScript modules](https://github.com/derhuerst/vbb-modules) for more use cases.
 
-- [`vbb-rest`](https://gitter.im/derhuerst/vbb-rest) REST API
-- [`vbb-telegram`](https://gitter.im/derhuerst/vbb-telegram) Telegram Bot
-- [`vbb-hafas`](https://gitter.im/derhuerst/vbb-hafas) API client
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+---
+
+*vbb-util* is a colleciton of JavaScript utilities for VBB public transport stuff.
 
 [![npm version](https://img.shields.io/npm/v/vbb-util.svg)](https://www.npmjs.com/package/vbb-util)
-[![dependency status](https://img.shields.io/david/derhuerst/vbb-util.svg)](https://david-dm.org/derhuerst/vbb-util)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/vbb-util.svg)
-[![gitter channel](https://badges.gitter.im/derhuerst/vbb-rest.svg)](https://gitter.im/derhuerst/vbb-rest)
-
 
 
 ## Contributing
